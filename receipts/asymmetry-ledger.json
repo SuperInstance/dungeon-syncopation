@@ -1,0 +1,183 @@
+{
+  "run": "73-b",
+  "flips": [
+    {
+      "seed": 73001,
+      "id": "f-s73001-p1",
+      "pulseN": 1,
+      "decisionSource": "menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-potion-high",
+      "installedScript": "p1-potion-high",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": -4,
+        "steps": 20,
+        "events": {
+          "hazard": 3,
+          "move": 15,
+          "treasure": 2
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": -54,
+      "seenWindowScore": 30,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -24,
+        "seenWindowScore": 30
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p2",
+      "pulseN": 2,
+      "decisionSource": "menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-swap-potion-treasure",
+      "installedScript": "p2-fear-down",
+      "survivorScript": "p1-potion-high",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": -32,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "hazard": 4
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": -4
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p1",
+      "pulseN": 1,
+      "decisionSource": "menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-fear-down",
+      "installedScript": "p1-swap-treasure-exit",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": 50,
+        "steps": 20,
+        "events": {
+          "move": 15,
+          "treasure": 5
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": 52,
+      "seenWindowScore": -2,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 50,
+        "seenWindowScore": -2
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p2",
+      "pulseN": 2,
+      "decisionSource": "menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-explore-up",
+      "installedScript": "p2-treasure-up",
+      "survivorScript": "p1-swap-treasure-exit",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": 50,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "exit": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": 50
+    }
+  ],
+  "lawNote": "wasFlipRight: RIGHT iff the flipped-off script unseen window did not beat the seen evidence window; netGain = replacement first window minus seen window, on the flipped slot."
+}

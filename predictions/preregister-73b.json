@@ -1,0 +1,45 @@
+{
+  "prereg": "preregister@1",
+  "wave": "73-b",
+  "discipline": "jepa aee0335 gold standard via fleet preregister@1: these two predictions were written and SEALED before the syncopation run executed (src/run-syncopation.mjs over 8 seeds x 200 turns). The seal is committed and pushed BEFORE the run; the push is the timestamp the fleet can prove. Claims are never edited after the run; verdicts are appended beside them by tools/preregister.mjs score (vendored from fleet-seeds/tools/preregister.mjs, unmodified). VACUOUS and PENDING are honest verdicts; nothing is silently passed. The engine is byte-deterministic and runs with ZERO model calls; the composer's model leg (<=6 attempts, receipt each in receipts/composer-calls.jsonl) may substitute ONE constrained menu idea per pulse — the sealed claims do not depend on the model leg being available.",
+  "writtenBeforeVerification": true,
+  "batteryBinding": {
+    "note": "byte-bind of the exact engine sources this seal covers (the deterministic game core, the strategy scripts/menu, and the composer). src/run-syncopation.mjs re-asserts these fail-closed before turning a single tick (E_BIND_MISMATCH aborts the run) — the 71-c battery-binding pattern.",
+    "src/vendor/quilt-dungeons-core.js.sha256": "sha256:d6e64c490a4ee419d3219a0929761ef8ab8d53bf6d38200d1471fb8f4b0987cb",
+    "src/strategy.js.sha256": "sha256:8032e774c4f6756ec0873717ef3a5cd79903733e147ee39d32675caf8053b107",
+    "src/composer.js.sha256": "sha256:06cbeea7a593ee16a031ecbb296bd4ddc105c589e194d7b0de946ea801abab2e"
+  },
+  "budgetReading": "mission cap <=6 model calls TOTAL for the composer's slow thoughts, receipt each (failures too) in receipts/composer-calls.jsonl; a circuit breaker closes the channel after 2 consecutive failures so a dead key burns at most 2 of the 6. The engine and both claims are fully computable at 0 calls (menu-only composer). ARM costs: trio+baseline simulation 0 calls by construction (deterministic core).",
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "THE ROTATION RATCHET: the rotating trio beats the frozen baseline on >= 5 of 8 seeds over 200 turns. Per seed, trio mean = (final composite score of slot A + slot B + slot C)/3 where A/B/C are forked from the same genesis (same seed, same stable point) and the composer rotates candidate scripts onto B and C (pulse interval 20 turns); the frozen baseline plays the same seed for the same 200 turns with the never-mutated baseline script. A seed is a WIN iff trioMean > baselineFinal AND the control invariant holds (slot A, which the composer never touches, byte-replays the frozen baseline receipts — sha256 of its receipt log; a broken control voids that seed and receipts it). Metric: metrics.p1_seedsWon >= 5 with metrics.p1_totalSeeds == 8 and metrics.control_slotA_equals_frozen_all == true (receipts/run-73b.json).",
+      "metric": "p1_seedsWon",
+      "op": "gte",
+      "threshold": 5,
+      "refusal": "At <= 4/8 wins the rotation ratchet does NOT beat the frozen baseline on this menu and dungeon shape — FAIL, an honest refutation of the strong syncopation reading at this scale; per-seed deltas in evidence.perSeed receipt exactly which seeds regressed and by how much. If the control invariant fails on any seed, that seed cannot count as a win (the comparison is void, receipted). If the run cannot execute at all, PENDING with the blocker named in the worklog — never a local-only PASS.",
+      "vacuousIf": {
+        "metric": "p1_totalSeeds",
+        "op": "eq",
+        "threshold": 0,
+        "note": "with zero seeds run, the trio-vs-baseline comparison cannot discriminate this run"
+      },
+      "writtenPreRun": "2026-10-03, before src/run-syncopation.mjs was executed against the 8-seed battery; smoke runs (2 seeds, 60 turns) were used only to debug mechanics and are receipted as smoke, not evidence"
+    },
+    {
+      "id": "P2",
+      "claim": "THE ASYMMETRY DIVIDEND: at least one flip in the asymmetry ledger is receipted wasFlipRight:false where the stale-window decision STILL led to a net gain — i.e., the composer flipped a script off on evidence one window stale (staleBy == 20 turns), the flipped-off script's unseen window (whatTheFlippedSlotDidAfter, the 20 turns it played while the composer was thinking) turned out to BEAT the evidence window that justified the flip (so the flip was objectively wrong), and yet the flipped slot's next-window composite under the replacement exceeded the seen window's composite (netGain > 0, resolved one window later). This is the measurable form of 'energizing creativity through asymmetric understanding': syncopation can pay even when the flip is wrong, because the game never pauses and the trio absorbs the miss. Metric: metrics.p2_flipCountWrongButGain >= 1 (receipts/run-73b.json; per-flip fields in evidence.flips).",
+      "metric": "p2_flipCountWrongButGain",
+      "op": "gte",
+      "threshold": 1,
+      "refusal": "Zero such flips across all resolved flips — FAIL with two receipted sub-cases (per-flip rows say which): (a) every stale flip was RIGHT, i.e., the staleness never actually misleads at this pulse interval and the claimed creative energization has no measurable instance here; or (b) wrong flips always cost net (the asymmetry hurts more than the always-on trio absorbs). Either way the strong reading of the principal's hypothesis is refuted at this scale and the ledger shows which.",
+      "vacuousIf": {
+        "metric": "p2_flipsResolvedBoth",
+        "op": "eq",
+        "threshold": 0,
+        "note": "if no flip has both wasFlipRight and netGain resolved (no flips at all, or every flip's resolution window ran past the run end), the asymmetry hypothesis cannot discriminate this run"
+      },
+      "writtenPreRun": "2026-10-03, before the run; the wasFlipRight and netGain definitions below were fixed in src/composer.js BEFORE the seal and are byte-bound above"
+    }
+  ]
+}

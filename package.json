@@ -1,0 +1,12 @@
+{
+  "name": "dungeon-syncopation",
+  "version": "1.0.0",
+  "description": "The syncopation engine: a slow system-two composer pulsing over three always-playing dungeon slots - stale flips, asymmetry receipts, rotating trio vs frozen baseline. wave-73b",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/syncopation.test.mjs",
+    "run:syncopation": "node src/run-syncopation.mjs"
+  },
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T22:01:32.077Z",
+  "claimsHash": "sha256:02b75cde026d6d7a997c26c924eec2110c481c533c562e4cc657638a69dfc8d3",
+  "claimsPath": "preregister-73b.json",
+  "note": "wave-73b syncopation engine: P1 rotation-ratchet vs frozen baseline (>=5/8 seeds), P2 asymmetry dividend (wrong flip, net gain). Sealed before the 8-seed x 200-turn run; engine byte-bound."
+}
