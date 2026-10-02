@@ -5,7 +5,7 @@
       "seed": 73001,
       "id": "f-s73001-p1",
       "pulseN": 1,
-      "decisionSource": "menu",
+      "decisionSource": "model-unusable(idea-unmappable)+menu",
       "kickedAt": 20,
       "landedAt": 40,
       "evidenceWindow": [
@@ -52,7 +52,7 @@
       "seed": 73001,
       "id": "f-s73001-p2",
       "pulseN": 2,
-      "decisionSource": "menu",
+      "decisionSource": "model-unusable(idea-unmappable)+menu",
       "kickedAt": 40,
       "landedAt": 60,
       "evidenceWindow": [
@@ -87,14 +87,333 @@
         60,
         80
       ],
+      "netGain": 6,
+      "seenWindowScore": -4,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 2,
+        "seenWindowScore": -4
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(idea-unmappable)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-fear-down",
+      "installedScript": "p3-treasure-down",
+      "survivorScript": "p1-potion-high",
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 2,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "potion": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": 30,
+      "seenWindowScore": -24,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 6,
+        "seenWindowScore": -24
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(idea-unmappable)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p1-potion-high",
+      "installedScript": "p4-treasure-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": 6,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "potion": 2,
+          "hazard": 1,
+          "treasure": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": 68,
+      "seenWindowScore": 2,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 70,
+        "seenWindowScore": 2
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(idea-unmappable)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p3-treasure-down",
+      "installedScript": "p5-treasure-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": 26,
+      "seenWindowScore": -4,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 22,
+        "seenWindowScore": -4
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(idea-unmappable)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p4-treasure-up",
+      "installedScript": "p6-potion-high",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": -70,
+      "seenWindowScore": 70,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 70
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p5-treasure-up",
+      "installedScript": "p7-fear-down",
+      "survivorScript": null,
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p6-potion-high",
+      "installedScript": "p8-fear-down",
+      "survivorScript": "p7-fear-down",
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": -50,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73001,
+      "id": "f-s73001-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p8-fear-down",
+      "installedScript": "p9-swap-exit-explore",
+      "survivorScript": null,
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        200,
+        220
+      ],
       "netGain": "unknown",
-      "seenWindowScore": -4
+      "seenWindowScore": 0
     },
     {
       "seed": 73002,
       "id": "f-s73002-p1",
       "pulseN": 1,
-      "decisionSource": "menu",
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
       "kickedAt": 20,
       "landedAt": 40,
       "evidenceWindow": [
@@ -140,7 +459,7 @@
       "seed": 73002,
       "id": "f-s73002-p2",
       "pulseN": 2,
-      "decisionSource": "menu",
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
       "kickedAt": 40,
       "landedAt": 60,
       "evidenceWindow": [
@@ -175,8 +494,2647 @@
         60,
         80
       ],
+      "netGain": -50,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-treasure-up",
+      "installedScript": "p3-explore-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 10,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "treasure": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": -50,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p1-swap-treasure-exit",
+      "installedScript": "p4-explore-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": 10,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 10,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p3-explore-up",
+      "installedScript": "p5-potion-high",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p4-explore-up",
+      "installedScript": "p6-treasure-down",
+      "survivorScript": "p5-potion-high",
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": -10,
+      "seenWindowScore": 10,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 10
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p6-treasure-down",
+      "installedScript": "p7-explore-down",
+      "survivorScript": null,
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p5-potion-high",
+      "installedScript": "p8-treasure-down",
+      "survivorScript": "p7-explore-down",
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73002,
+      "id": "f-s73002-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p8-treasure-down",
+      "installedScript": "p9-potion-low",
+      "survivorScript": null,
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        200,
+        220
+      ],
       "netGain": "unknown",
-      "seenWindowScore": 50
+      "seenWindowScore": 0
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p1",
+      "pulseN": 1,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-treasure-down",
+      "installedScript": "p1-treasure-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": -4,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "treasure": 1,
+          "potion": 1,
+          "hazard": 2
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": 20,
+      "seenWindowScore": 12,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 32,
+        "seenWindowScore": 12
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p2",
+      "pulseN": 2,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-horizon-long",
+      "installedScript": "p2-swap-treasure-exit",
+      "survivorScript": "p1-treasure-up",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": -30,
+      "seenWindowScore": 30,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 30
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-swap-treasure-exit",
+      "installedScript": "p3-treasure-up",
+      "survivorScript": "p1-treasure-up",
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 20,
+        "steps": 20,
+        "events": {
+          "treasure": 2,
+          "move": 18
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": -40,
+      "seenWindowScore": 32,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": 32
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p1-treasure-up",
+      "installedScript": "p4-treasure-up",
+      "survivorScript": "p3-treasure-up",
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": -44,
+      "seenWindowScore": 20,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -24,
+        "seenWindowScore": 20
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p3-treasure-up",
+      "installedScript": "p5-treasure-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": -24,
+        "steps": 20,
+        "events": {
+          "move": 17,
+          "hazard": 3
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": 58,
+      "seenWindowScore": -8,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 50,
+        "seenWindowScore": -8
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p4-treasure-up",
+      "installedScript": "p6-potion-low",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": -50,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p6-potion-low",
+      "installedScript": "p7-explore-down",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": -50,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p5-treasure-up",
+      "installedScript": "p8-exit-low",
+      "survivorScript": null,
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73003,
+      "id": "f-s73003-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p7-explore-down",
+      "installedScript": "p9-potion-high",
+      "survivorScript": "p8-exit-low",
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        200,
+        220
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": 0
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p1",
+      "pulseN": 1,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-treasure-down",
+      "installedScript": "p1-potion-high",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": -6,
+        "steps": 20,
+        "events": {
+          "move": 17,
+          "treasure": 1,
+          "hazard": 2
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": -34,
+      "seenWindowScore": 26,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": 26
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p2",
+      "pulseN": 2,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-swap-exit-explore",
+      "installedScript": "p2-potion-high",
+      "survivorScript": "p1-potion-high",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": 46,
+      "seenWindowScore": -6,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 40,
+        "seenWindowScore": -6
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-potion-high",
+      "installedScript": "p3-explore-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 40,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "treasure": 4
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": 0,
+      "seenWindowScore": -8,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": -8
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p1-potion-high",
+      "installedScript": "p4-horizon-short",
+      "survivorScript": "p3-explore-up",
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": -40,
+      "seenWindowScore": 40,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 40
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p4-horizon-short",
+      "installedScript": "p5-swap-potion-treasure",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": 8,
+      "seenWindowScore": -8,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": -8
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p3-explore-up",
+      "installedScript": "p6-explore-up",
+      "survivorScript": "p5-swap-potion-treasure",
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": 50,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 50,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p6-explore-up",
+      "installedScript": "p7-treasure-down",
+      "survivorScript": null,
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": -6,
+        "steps": 20,
+        "events": {
+          "move": 18,
+          "hazard": 1,
+          "potion": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p5-swap-potion-treasure",
+      "installedScript": "p8-exit-low",
+      "survivorScript": "p7-treasure-down",
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": -50,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73004,
+      "id": "f-s73004-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p8-exit-low",
+      "installedScript": "p9-fear-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": 50,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "exit": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        200,
+        220
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": 0
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p1",
+      "pulseN": 1,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-fear-up",
+      "installedScript": "p1-explore-down",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": 64,
+        "steps": 20,
+        "events": {
+          "move": 15,
+          "treasure": 2,
+          "potion": 1,
+          "hazard": 1,
+          "exit": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": -14,
+      "seenWindowScore": 14,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 14
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p2",
+      "pulseN": 2,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-swap-treasure-exit",
+      "installedScript": "p2-fear-down",
+      "survivorScript": "p1-explore-down",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": -64,
+      "seenWindowScore": 64,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 64
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-fear-down",
+      "installedScript": "p3-horizon-long",
+      "survivorScript": null,
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p1-explore-down",
+      "installedScript": "p4-swap-treasure-exit",
+      "survivorScript": "p3-horizon-long",
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p4-swap-treasure-exit",
+      "installedScript": "p5-treasure-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": 30,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 30,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p3-horizon-long",
+      "installedScript": "p6-potion-high",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": 30,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 30,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p6-potion-high",
+      "installedScript": "p7-swap-treasure-exit",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": 4,
+        "steps": 20,
+        "events": {
+          "move": 17,
+          "treasure": 1,
+          "hazard": 1,
+          "potion": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": -30,
+      "seenWindowScore": 30,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 30
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p5-treasure-up",
+      "installedScript": "p8-swap-exit-explore",
+      "survivorScript": null,
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": -4,
+      "seenWindowScore": 4,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 4
+      }
+    },
+    {
+      "seed": 73005,
+      "id": "f-s73005-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p7-swap-treasure-exit",
+      "installedScript": "p9-treasure-up",
+      "survivorScript": "p8-swap-exit-explore",
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        200,
+        220
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": 4
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p1",
+      "pulseN": 1,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-treasure-up",
+      "installedScript": "p1-explore-up",
+      "survivorScript": "p0-horizon-short",
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": 12,
+        "steps": 20,
+        "events": {
+          "move": 18,
+          "treasure": 1,
+          "potion": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": -32,
+      "seenWindowScore": 24,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": 24
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p2",
+      "pulseN": 2,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-horizon-short",
+      "installedScript": "p2-swap-exit-explore",
+      "survivorScript": "p1-explore-up",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": -28,
+      "seenWindowScore": 12,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -16,
+        "seenWindowScore": 12
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p1-explore-up",
+      "installedScript": "p3-potion-high",
+      "survivorScript": null,
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": -16,
+        "steps": 20,
+        "events": {
+          "move": 18,
+          "hazard": 2
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": 38,
+      "seenWindowScore": -8,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 30,
+        "seenWindowScore": -8
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p2-swap-exit-explore",
+      "installedScript": "p4-fear-down",
+      "survivorScript": "p3-potion-high",
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": -6,
+        "steps": 20,
+        "events": {
+          "move": 17,
+          "treasure": 1,
+          "hazard": 2
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": 12,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 12,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p4-fear-down",
+      "installedScript": "p5-swap-treasure-exit",
+      "survivorScript": "p3-potion-high",
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": -20,
+      "seenWindowScore": 30,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 10,
+        "seenWindowScore": 30
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p3-potion-high",
+      "installedScript": "p6-explore-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 10,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "treasure": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": 8,
+      "seenWindowScore": -8,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": -8
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p5-swap-treasure-exit",
+      "installedScript": "p7-exit-low",
+      "survivorScript": "p6-explore-up",
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": -44,
+      "seenWindowScore": 44,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 44
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p7-exit-low",
+      "installedScript": "p8-explore-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": -24,
+        "steps": 20,
+        "events": {
+          "move": 17,
+          "hazard": 3
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": 0,
+      "seenWindowScore": 0,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 0
+      }
+    },
+    {
+      "seed": 73006,
+      "id": "f-s73006-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p6-explore-up",
+      "installedScript": "p9-swap-exit-explore",
+      "survivorScript": "p8-explore-up",
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        200,
+        220
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": 0
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p1",
+      "pulseN": 1,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-swap-exit-explore",
+      "installedScript": "p1-potion-high",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": -16,
+        "steps": 20,
+        "events": {
+          "move": 18,
+          "hazard": 2
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": -10,
+      "seenWindowScore": 16,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 6,
+        "seenWindowScore": 16
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p2",
+      "pulseN": 2,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-swap-treasure-exit",
+      "installedScript": "p2-swap-potion-treasure",
+      "survivorScript": "p1-potion-high",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": 6,
+        "steps": 20,
+        "events": {
+          "move": 15,
+          "treasure": 2,
+          "hazard": 2,
+          "potion": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": 18,
+      "seenWindowScore": -16,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 2,
+        "seenWindowScore": -16
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-swap-potion-treasure",
+      "installedScript": "p3-explore-down",
+      "survivorScript": null,
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 2,
+        "steps": 20,
+        "events": {
+          "potion": 1,
+          "move": 19
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": -14,
+      "seenWindowScore": 6,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": 6
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p1-potion-high",
+      "installedScript": "p4-potion-high",
+      "survivorScript": "p3-explore-down",
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": -8,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": 48,
+      "seenWindowScore": 2,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 50,
+        "seenWindowScore": 2
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p4-potion-high",
+      "installedScript": "p5-treasure-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": 50,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "exit": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": 28,
+      "seenWindowScore": -8,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 20,
+        "seenWindowScore": -8
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p6",
+      "pulseN": 6,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 120,
+      "landedAt": 140,
+      "evidenceWindow": [
+        100,
+        120
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p3-explore-down",
+      "installedScript": "p6-swap-treasure-exit",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        120,
+        140
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          120,
+          140
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        140,
+        160
+      ],
+      "netGain": -30,
+      "seenWindowScore": 50,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 20,
+        "seenWindowScore": 50
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p6-swap-treasure-exit",
+      "installedScript": "p7-fear-down",
+      "survivorScript": "p5-treasure-up",
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": 10,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "treasure": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": -52,
+      "seenWindowScore": 20,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -32,
+        "seenWindowScore": 20
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p8",
+      "pulseN": 8,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 160,
+      "landedAt": 180,
+      "evidenceWindow": [
+        140,
+        160
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p5-treasure-up",
+      "installedScript": "p8-potion-high",
+      "survivorScript": null,
+      "unseenWindow": [
+        160,
+        180
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          160,
+          180
+        ],
+        "score": -32,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "hazard": 4
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        180,
+        200
+      ],
+      "netGain": -10,
+      "seenWindowScore": 10,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 0,
+        "seenWindowScore": 10
+      }
+    },
+    {
+      "seed": 73007,
+      "id": "f-s73007-p9",
+      "pulseN": 9,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 180,
+      "landedAt": 200,
+      "evidenceWindow": [
+        160,
+        180
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p7-fear-down",
+      "installedScript": "p9-potion-high",
+      "survivorScript": "p8-potion-high",
+      "unseenWindow": [
+        180,
+        200
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          180,
+          200
+        ],
+        "score": -32,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "hazard": 4
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        200,
+        220
+      ],
+      "netGain": "unknown",
+      "seenWindowScore": 10
+    },
+    {
+      "seed": 73008,
+      "id": "f-s73008-p1",
+      "pulseN": 1,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 20,
+      "landedAt": 40,
+      "evidenceWindow": [
+        0,
+        20
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p0-horizon-short",
+      "installedScript": "p1-swap-exit-explore",
+      "survivorScript": null,
+      "unseenWindow": [
+        20,
+        40
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          20,
+          40
+        ],
+        "score": -32,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "hazard": 4
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        40,
+        60
+      ],
+      "netGain": 10,
+      "seenWindowScore": 22,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 32,
+        "seenWindowScore": 22
+      }
+    },
+    {
+      "seed": 73008,
+      "id": "f-s73008-p2",
+      "pulseN": 2,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 40,
+      "landedAt": 60,
+      "evidenceWindow": [
+        20,
+        40
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p0-explore-up",
+      "installedScript": "p2-swap-treasure-exit",
+      "survivorScript": "p1-swap-exit-explore",
+      "unseenWindow": [
+        40,
+        60
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          40,
+          60
+        ],
+        "score": 0,
+        "steps": 20,
+        "events": {
+          "move": 20
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        60,
+        80
+      ],
+      "netGain": -32,
+      "seenWindowScore": 24,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": 24
+      }
+    },
+    {
+      "seed": 73008,
+      "id": "f-s73008-p3",
+      "pulseN": 3,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 60,
+      "landedAt": 80,
+      "evidenceWindow": [
+        40,
+        60
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p2-swap-treasure-exit",
+      "installedScript": "p3-swap-treasure-exit",
+      "survivorScript": "p1-swap-exit-explore",
+      "unseenWindow": [
+        60,
+        80
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          60,
+          80
+        ],
+        "score": 10,
+        "steps": 20,
+        "events": {
+          "move": 19,
+          "treasure": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        80,
+        100
+      ],
+      "netGain": -34,
+      "seenWindowScore": 32,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -2,
+        "seenWindowScore": 32
+      }
+    },
+    {
+      "seed": 73008,
+      "id": "f-s73008-p4",
+      "pulseN": 4,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 80,
+      "landedAt": 100,
+      "evidenceWindow": [
+        60,
+        80
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p1-swap-exit-explore",
+      "installedScript": "p4-potion-low",
+      "survivorScript": "p3-swap-treasure-exit",
+      "unseenWindow": [
+        80,
+        100
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          80,
+          100
+        ],
+        "score": -2,
+        "steps": 20,
+        "events": {
+          "move": 16,
+          "potion": 3,
+          "hazard": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        100,
+        120
+      ],
+      "netGain": 0,
+      "seenWindowScore": 10,
+      "netGainDetail": {
+        "replacementFirstWindowScore": 10,
+        "seenWindowScore": 10
+      }
+    },
+    {
+      "seed": 73008,
+      "id": "f-s73008-p5",
+      "pulseN": 5,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 100,
+      "landedAt": 120,
+      "evidenceWindow": [
+        80,
+        100
+      ],
+      "staleBy": 20,
+      "targetSlot": "B",
+      "flippedOffSlot": "B",
+      "flippedOffScript": "p3-swap-treasure-exit",
+      "installedScript": "p5-explore-up",
+      "survivorScript": null,
+      "unseenWindow": [
+        100,
+        120
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          100,
+          120
+        ],
+        "score": 10,
+        "steps": 20,
+        "events": {
+          "move": 14,
+          "hazard": 5,
+          "exit": 1
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": false,
+      "netGainWindow": [
+        120,
+        140
+      ],
+      "netGain": -74,
+      "seenWindowScore": -2,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -76,
+        "seenWindowScore": -2
+      }
+    },
+    {
+      "seed": 73008,
+      "id": "f-s73008-p7",
+      "pulseN": 7,
+      "decisionSource": "model-unusable(channel-closed:budget-exhausted)+menu",
+      "kickedAt": 140,
+      "landedAt": 160,
+      "evidenceWindow": [
+        120,
+        140
+      ],
+      "staleBy": 20,
+      "targetSlot": "C",
+      "flippedOffSlot": "C",
+      "flippedOffScript": "p4-potion-low",
+      "installedScript": "p7-explore-down",
+      "survivorScript": null,
+      "unseenWindow": [
+        140,
+        160
+      ],
+      "whatTheFlippedSlotDidAfter": {
+        "window": [
+          140,
+          160
+        ],
+        "score": -24,
+        "steps": 20,
+        "events": {
+          "move": 17,
+          "hazard": 3
+        },
+        "note": "the window the flipped-off script played while the composer was thinking — revealed only at the flip"
+      },
+      "wasFlipRight": true,
+      "netGainWindow": [
+        160,
+        180
+      ],
+      "netGain": 16,
+      "seenWindowScore": -24,
+      "netGainDetail": {
+        "replacementFirstWindowScore": -8,
+        "seenWindowScore": -24
+      }
     }
   ],
   "lawNote": "wasFlipRight: RIGHT iff the flipped-off script unseen window did not beat the seen evidence window; netGain = replacement first window minus seen window, on the flipped slot."

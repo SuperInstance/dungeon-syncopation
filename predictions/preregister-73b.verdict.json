@@ -1,0 +1,31 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:02b75cde026d6d7a997c26c924eec2110c481c533c562e4cc657638a69dfc8d3",
+  "sealedAt": "2026-10-02T22:01:32.077Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "p1_seedsWon",
+      "op": "gte",
+      "threshold": 5,
+      "verdict": "FAIL",
+      "measured": 4,
+      "reason": "At <= 4/8 wins the rotation ratchet does NOT beat the frozen baseline on this menu and dungeon shape — FAIL, an honest refutation of the strong syncopation reading at this scale; per-seed deltas in evidence.perSeed receipt exactly which seeds regressed and by how much. If the control invariant fails on any seed, that seed cannot count as a win (the comparison is void, receipted). If the run cannot execute at all, PENDING with the blocker named in the worklog — never a local-only PASS."
+    },
+    {
+      "claimId": "P2",
+      "metric": "p2_flipCountWrongButGain",
+      "op": "gte",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 8
+    }
+  ],
+  "counts": {
+    "PASS": 1,
+    "FAIL": 1,
+    "VACUOUS": 0,
+    "PENDING": 0
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}
